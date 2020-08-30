@@ -1,0 +1,9 @@
+ChatterBot==1.0.8
+Django==3.0.7
+nltk==3.4.5
+wikipedia==1.4.0
+spacy==2.3.2
+SpeechRecognition==3.8.1
+PyYAML==5.1.2
+pyttsx3==2.90
+Pillow==6.2.0
