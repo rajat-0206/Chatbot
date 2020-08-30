@@ -5,4 +5,5 @@ from . import views
 urlpatterns = [
     path('',views.home,name="home"),
     path('ask',views.askrisp,name="query"),
+    path('temp',views.temp,name="temp"),
 ]

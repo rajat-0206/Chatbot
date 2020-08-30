@@ -59,3 +59,5 @@ def askrisp(request):
 def home(request):
     return render(request,"home.html")
 
+def temp(request):
+    return render(request,'risp.html')
