@@ -40,11 +40,13 @@ INSTALLED_APPS = [
     'risp',
     'api',
     'rest_framework',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -71,6 +73,12 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'chatbot.wsgi.application'
+
+CORS_ALLOWED_ORIGINS = [
+    "https://askrisp.web.app",
+    "http://localhost:5000",
+    "http://127.0.0.1:5500"
+]
 
 
 # Database
