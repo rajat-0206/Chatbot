@@ -7,3 +7,4 @@ SpeechRecognition==3.8.1
 PyYAML==5.1.2
 pyttsx3==2.90
 Pillow==6.2.0
+djangorestframework==3.11.1

@@ -11,7 +11,30 @@
         <li>Hii this is your personal assistance risp. How can I help you</li>
     </div>
     <input type="text" id="query" placeholder="Ask anything">
-    <button onclick="ask()">Submit</button>
+    <button onclick="ask()">Ask</button>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    function ask(){
+        query = $('#query').val();
+        document.getElementById('query').value="";
+        text = "You :"+ query;
+        x = document.createElement("LI");
+        x.appendChild(document.createTextNode(text));
+        document.getElementById("answer").appendChild(x);
+        
+        $.get('/ask',{
+            'query':query,
+        },
+        function(data,status){
+            if(status=="success"){
+                text = "Risp :"+ String(data);
+                x = document.createElement("LI");
+                x.appendChild(document.createTextNode(text));
+                document.getElementById("answer").appendChild(x);
+            }
+        }
+        )
+    }
+    </script>
 </html>

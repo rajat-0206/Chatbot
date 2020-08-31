@@ -20,8 +20,6 @@ function bot(msg) { /*change*/
     "</div>" +
     "</div>";
   $('#chat').append($content);
-  chat = document.getElementById('chat');
-  chat.scrollTop = chat.scrollHeight;
 }
 
 function user(msg) { /*change*/
@@ -42,7 +40,6 @@ function user(msg) { /*change*/
     query = $('#status_message').val();
     document.getElementById('status_message').value = "";
     user(query);
-
     $.get('/ask', {
       'query': query,
     },
