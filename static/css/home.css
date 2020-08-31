@@ -196,13 +196,14 @@ body
     background: #dfece7 none repeat scroll 0 0;
     border: 1px solid #dfece7;
     border-radius: 2px;
-    width:70%;    
+    width:100%;
     color: #1f2121;
 }
 
 .popup-messages .direct-chat-timestamp {
     color: #444;
     opacity: 0.6;
+    -webkit-user-select: none;
 }
 
 
@@ -214,28 +215,11 @@ body
     margin: -2px 0 0;
     width: 40px;
 }
-.direct-chat-reply-name {
-    color: #fff;
-    font-size: 15px;
-    margin: 0 0 0 10px;
-    opacity: 0.9;
-}
-
-.direct-chat-img-reply-small
-{
-    border: 1px solid #fff;
-    border-radius: 50%;
-    float: left;
-    height: 20px;
-    margin: 0 8px;
-    width: 20px;
-	background:#3f9684;
-}
 
 .popup-messages .direct-chat-msg {
     margin-bottom: 20px;
     position: relative;
-
+    display:flex;
 }
 
 
@@ -280,29 +264,29 @@ body
     border: 1px solid #d2d6de;
     border-radius: 5px;
     color: #444;
-    margin: 5px 0 0 50px;
+    margin: 5px 0 0 3px;
     padding: 5px 10px;
     position: relative;
 }
 
-.direct-sender {
-    margin-bottom: 10px;
+.popup-messages .direct-sender {
+    margin-bottom: 20px;
     position: relative;
+    right:0px;
+    display:flex;
 
 }
-.popup-messages .direct-sender-messages {
-    height: auto;
-}
+
 .popup-messages .direct-sender-text {
     background: #dfece7 none repeat scroll 0 0;
     border: 1px solid #dfece7;
     border-radius: 2px;
     color: #1f2121;
     padding: 5px 10px;
-    width:70%;
     right:0px;
     float:right;
-    margin:0px 10px 0px 0px;
+    width:100%;
+    margin:5px 3px 0 0px;
     text-align: right;
     position: relative;
 }
@@ -318,9 +302,8 @@ body
 .popup-messages  .direct-sender-img {
 	background: #3f9684  none repeat scroll 0 0;
     border-radius: 50%;
-    float: right;
     height: 40px;
-    margin: -2px 0 0;
+    margin: -2px 0 0 2px;
     width: 40px;
 }
 
@@ -343,6 +326,6 @@ body
     pointer-events: none;
     position: absolute;
     right:-10px;
-    top: 15px;
+    top: 10px;
     width: 0;
 }
